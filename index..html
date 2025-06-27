@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevSatvak | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+    }
+  </style>
+</head>
+<body class="text-white font-sans min-h-screen flex flex-col items-center justify-center px-4 py-12 animate-fade-in">
+
+   <img src="Ethan..jpg" alt="DevSatvak profile picture"
+       class="w-36 h-36 rounded-full object-cover border-4 border-blue-500 shadow-blue-400 shadow-xl mb-5 transition-transform duration-300 hover:scale-105"/>
+
+  <h1 class="text-5xl font-extrabold tracking-tight mb-1">DevSatvak</h1>
+  <p class="text-base text-blue-300 font-medium">Frontend Developer</p>
+
+  <p class="text-gray-300 mt-5 text-center max-w-md leading-relaxed">
+    Hey there! I’m DevSatvak, a passionate frontend developer with a focus on creating clean, elegant, and interactive UIs using JavaScript, HTML, and CSS. Take a look at some of my featured work!
+  </p>
+
+  <a href="https://discord.com/users/1383484648738390148" target="_blank"
+     class="mt-6 bg-blue-500 text-white px-6 py-2 rounded-md font-semibold shadow-md hover:bg-blue-600 hover:shadow-lg transition duration-200">
+    Contact Me
+  </a>
+
+  <section class="mt-14 max-w-4xl w-full">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-400">Featured Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+      <!-- Project Card -->
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl shadow-md hover:shadow-blue-500/30 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">🌦️ Simple Weather App</h3>
+        <p class="text-sm text-gray-400">A minimalist weather app powered by the OpenWeather API.</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl shadow-md hover:shadow-blue-500/30 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">📝 To-Do List</h3>
+        <p class="text-sm text-gray-400">A slick task manager with local storage and clean UX.</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl shadow-md hover:shadow-blue-500/30 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">📦 Landing Page</h3>
+        <p class="text-sm text-gray-400">A responsive and modern product landing page built with Tailwind.</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl shadow-md hover:shadow-blue-500/30 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">🧮 Calculator</h3>
+        <p class="text-sm text-gray-400">An elegant, responsive calculator using JavaScript logic.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 1.2s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
